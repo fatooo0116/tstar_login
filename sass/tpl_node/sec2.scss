@@ -1,0 +1,109 @@
+#sec2{
+
+   
+    margin:auto;
+
+    background-image:url(../images/number_bg.jpg);
+    background-size:cover;
+    background-position:center;
+
+
+    .inner{
+        display:flex;
+        padding:0 15px;
+        max-width: 930px;
+        margin:auto;
+        justify-content: space-between;
+        height:186px;
+        align-items: center;
+        align-content: center;
+        .logo{
+            width:180px;
+            img{
+                width:180px;
+            }
+        }
+        .right{
+            width:639px;
+            justify-content: space-between;
+            display:flex;
+           // justify-content: center;
+            .item{
+                width:124px;
+                color:#00ab1c;
+                text-align: center;
+                .num{
+                    font-size: 50px;;
+                    font-weight:bold;
+                    .tx{
+                        font-size: 30px;;
+                        font-weight: 500;
+                    }
+                    .tx2{
+                        font-size:18px;
+                    }
+                }
+                .text{
+                    font-size: 14px;;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    
+    #sec2 .inner{
+        padding: 0 20px;
+        flex-wrap: wrap;
+        height: auto;;
+        padding: 15px;
+        .logo{  
+            margin:auto;
+            img{
+                margin:auto;
+            }
+        }
+        .right{
+            width:100%;
+            .item{
+                width:50%;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 600px){
+
+    
+    #sec2 .inner{
+        .logo{
+            padding:5px 0;
+            img{
+                height:70px;
+                width:auto;
+            }
+        }
+        .right{
+            width:100%;
+            flex-wrap: wrap;
+            .item{
+                width:50%;
+                padding-top:5px;
+                padding-bottom: 25px;;
+            }
+        }
+    }
+}
+

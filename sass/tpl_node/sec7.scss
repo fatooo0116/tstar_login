@@ -1,0 +1,51 @@
+#sec7{
+    margin:auto;
+    background-image:url(../images/no-contract-bg@2x.jpg);
+    background-size:cover;
+    background-position:center;
+    .inner{
+        transform: translate(-90px, 0%);
+        height:550px;       
+        max-width: 1024px;
+        margin:auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;;
+
+        .float_left{
+            max-width: 431px;;
+            background:rgba(255,255,255,0.9);
+            // display: flex;
+             padding:31px 60px;;
+
+            h3{
+                font-size:26px;
+                color:#00ab1c;
+                font-weight:bold;
+                margin:18px 0 16px;
+            }
+            p{
+                font-size:12px;
+                color:#4a4a4a;
+                max-width: 300px;;
+                line-height: 18px;;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1400px){
+    #sec7 .inner {
+        transform: translate(0%, 0%);
+        padding:0 15px;
+    }
+}
+
+@media (max-width: 600px){
+    #sec7 .inner {
+        .float_left{
+            margin:auto;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 411" style="enable-background:new 0 0 1920 411;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#a);}
+	.st1{fill:#FFFFFF;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="150%" id="a" width="109.4%" x="-4.7%" y="-25%">
+	<feOffset  in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="30"></feGaussianBlur>
+	<feColorMatrix  in="shadowBlurOuter1" values="0 0 0 0 0.455204553 0 0 0 0 0.545912591 0 0 0 0 0.525610004 0 0 0 0.225196678 0">
+		</feColorMatrix>
+</filter>
+<g transform="translate(0 59)">
+	<g class="st0">
+		<path id="b_2_" d="M0,0h1920v360H0V0z"/>
+	</g>
+	<g>
+		<path id="b_1_" class="st1" d="M0,0h1920v360H0V0z"/>
+	</g>
+</g>
+</svg>

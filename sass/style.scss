@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+
+
+img{ 
+    display:block;
+    max-width: 100%;; 
+}
+section,section .inner{
+    position: relative;
+    width:100%;
+}
+
+
+@import "animate";
+
+@import "tpl_node/header";
+
+@import "tpl_node/sec1";
+@import "tpl_node/sec2";
+@import "tpl_node/sec3";
+@import "tpl_node/sec4";
+@import "tpl_node/sec5";
+@import "tpl_node/sec6";
+@import "tpl_node/sec7";
+@import "tpl_node/sec8";
+@import "tpl_node/sec9";
+@import "tpl_node/sec10";
+@import "tpl_node/footer";
+
+
+.clearfix:after {  visibility:hidden;  display:block;  font-size:0;  content:" ";  clear:both;  height:0; } .clearfix {  zoom:1; }
+
+.button,
+input[type="submit"]{
+    background:#00ab1c;
+    border-radius: 2px;
+    height:42px;;
+    color:#fff;
+    border: 0px;
+    padding: 0 20px;
+    transform: scale(1);
+    transition: 0.3s;
+    outline:none;
+    height: 42px;
+    align-items: center;
+    font-size:14px;
+    display:inline-flex;
+
+    &:hover{
+        background:#04bf23;
+        outline:none;
+    }
+    &:active{
+        transform: scale(0.95);
+        outline:none;
+    }
+}
+
+
+
+
+
+
+@import "materialize";
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+@import "tpl_node/header_mobile";
+@import "tpl_node/section";
+@import "tpl_node/reset";
+@import "tpl_node/page";
+@import "tpl_node/client";
+@import "tpl_node/event1";
+@import "tpl_node/about";
+@import "tpl_node/projects";
+
+@import "tpl_admin/login";
+@import "tpl_admin/admin";
+*/
