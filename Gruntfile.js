@@ -9,14 +9,14 @@ grunt.initConfig({
     sass: {
         dist: {
             files: {
-                'dist/css/main.css': 'sass/style.scss'
+                'dist/css/demo/demo.css': 'sass/style.scss'
             }
         }
     },
 
     watch: {
         scripts: {
-          files: ['sass/style.scss','sass/tpl_node/*.scss','sass/tpl_admin/*.scss'],
+          files: ['sass/style.scss','sass/*.scss','sass/tpl_node/*.scss'],
           tasks: ['sass'],
           options: {
           //  event: ['added', 'deleted'],

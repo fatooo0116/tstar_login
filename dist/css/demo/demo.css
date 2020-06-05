@@ -1,0 +1,247 @@
+.tsContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .tsContent.fullscreen {
+    min-height: 100vh; }
+
+.modal .close-modal {
+  opacity: 0; }
+.modal .icon svg {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: auto; }
+.modal .icon h3 {
+  color: #E3007C;
+  text-align: center; }
+
+.sec_login {
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  -ms-transform: translate(-100px, 0);
+  -webkit-transform: translate(-100px, 0);
+  transform: translate(-100px, 0);
+  position: absolute;
+  width: 400px;
+  height: 250px; }
+  .sec_login.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    -ms-transform: translate(0, 0) !important;
+    -webkit-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important; }
+  .sec_login.right {
+    -ms-transform: translate(100px, 0);
+    -webkit-transform: translate(-100px, 0);
+    transform: translate(100px, 0); }
+
+.login_main .sec_login.sh_err ul li input {
+  border: 1px solid #b00023; }
+.login_main .sec_login.sh_err ul li .err {
+  right: 0;
+  left: auto; }
+
+.login_main {
+  margin-top: 50px;
+  margin-left: 12vw;
+  width: 45vw;
+  max-width: 400px;
+  color: #fff;
+  /*  note */ }
+  .login_main h3 {
+    font-size: 1.9em;
+    margin: 0px 0px 10px 0px;
+    letter-spacing: 0.2em; }
+  .login_main p {
+    font-size: 1.1em;
+    margin: 0 0 10.5px;
+    letter-spacing: 0.2em; }
+  .login_main form.mll_form ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .login_main form.mll_form ul > li {
+      list-style-type: none;
+      padding: 5px 0px;
+      position: relative;
+      overflow: hidden; }
+      .login_main form.mll_form ul > li input {
+        outline: none;
+        text-align: left;
+        background-color: transparent;
+        border: 0px;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid #fff;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        height: 40px;
+        width: 100%;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em; }
+      .login_main form.mll_form ul > li .err {
+        /* height: 100%; */
+        padding: 0px 15px;
+        display: flex;
+        right: auto;
+        left: 110%;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        font-size: 0.9em;
+        top: 16px; }
+        .login_main form.mll_form ul > li .err:before {
+          content: "";
+          width: 100%;
+          height: 30px;
+          background-color: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          z-index: -1;
+          left: 0px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          border-radius: 100px; }
+        .login_main form.mll_form ul > li .err:after {
+          content: "";
+          width: 15px;
+          height: 15px;
+          margin: -2px 0 0 5px;
+          background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5Ny40NzIgNDk3LjQ3MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDk3LjQ3MiA0OTcuNDcyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS4yNSAwIDAgLTEuMjUgMCA0NSkiPgoJPGc+CgkJPGc+CgkJCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkNDNEQ7IiBkPSJNMjQuMzc0LTM1Ny44NTdjLTIwLjk1OCwwLTMwLjE5NywxNS4yMjMtMjAuNTQ4LDMzLjgyNkwxODEuNDIxLDE3LjkyOCAgICAgYzkuNjQ4LDE4LjYwMywyNS40NjMsMTguNjAzLDM1LjEyMywwTDM5NC4xNC0zMjQuMDMxYzkuNjcxLTE4LjYwMywwLjQyMS0zMy44MjYtMjAuNTQ4LTMzLjgyNkgyNC4zNzR6Ii8+CgkJCTxwYXRoIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBkPSJNMTczLjYwNS04MC45MjJjMCwxNC44MTQsMTAuOTM0LDIzLjk4NCwyNS4zOTUsMjMuOTg0YzE0LjEyLDAsMjUuNDA3LTkuNTEyLDI1LjQwNy0yMy45ODQgICAgIFYtMjE2Ljc1YzAtMTQuNDYxLTExLjI4Ny0yMy45ODQtMjUuNDA3LTIzLjk4NGMtMTQuNDYxLDAtMjUuMzk1LDkuMTgyLTI1LjM5NSwyMy45ODRWLTgwLjkyMnogTTE3MS40ODktMjg5LjA1NiAgICAgYzAsMTUuMTY3LDEyLjM0NSwyNy41MTEsMjcuNTExLDI3LjUxMWMxNS4xNjcsMCwyNy41MjMtMTIuMzQ1LDI3LjUyMy0yNy41MTFjMC0xNS4xNzgtMTIuMzU2LTI3LjUyMy0yNy41MjMtMjcuNTIzICAgICBDMTgzLjgzNC0zMTYuNTc5LDE3MS40ODktMzA0LjIzNCwxNzEuNDg5LTI4OS4wNTYiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat; }
+      .login_main form.mll_form ul > li ol.terms {
+        padding: 0 0 0 18px;
+        margin: 0; }
+        .login_main form.mll_form ul > li ol.terms li {
+          padding: 5px 0px;
+          line-height: 1.7em;
+          list-style-type: decimal;
+          letter-spacing: 1px; }
+    .login_main form.mll_form ul li button {
+      outline: none;
+      border: 0px;
+      width: 100% !important;
+      height: 40px;
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      text-align: center;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      border-radius: 100px;
+      color: #fff;
+      background-color: #87286E;
+      transition: all .2s; }
+      .login_main form.mll_form ul li button:hover {
+        background: #E3007C;
+        color: #fff; }
+      .login_main form.mll_form ul li button.btn_send {
+        margin-top: 15px; }
+    .login_main form.mll_form ul li .preview {
+      opacity: 0;
+      padding: 10px 10px;
+      color: #E3007C; }
+    .login_main form.mll_form ul li .exit {
+      background-image: url(../../images/demo/close.svg);
+      background-size: cover;
+      background-position: center;
+      height: 16px;
+      width: 16px;
+      position: absolute;
+      right: 12px;
+      top: 15px;
+      cursor: pointer; }
+    .login_main form.mll_form ul li.focus input[type="password"],
+    .login_main form.mll_form ul li.focus .preview {
+      opacity: 1;
+      background: #fff;
+      color: #E3007C; }
+    .login_main form.mll_form ul li a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 100%;
+      padding: 0px 10px;
+      text-align: center; }
+      .login_main form.mll_form ul li a:hover {
+        text-decoration: none;
+        color: #E3007C; }
+  .login_main .lost_pass {
+    text-align: center; }
+    .login_main .lost_pass a {
+      display: block;
+      transition: 0.3s; }
+      .login_main .lost_pass a:hover {
+        text-decoration: none;
+        color: #E3007C; }
+  .login_main .note {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    position: relative; }
+    .login_main .note:after {
+      content: '';
+      width: 25px;
+      height: 25px;
+      display: block;
+      margin-left: 10px;
+      background-image: url(../../images/demo/icon_note.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+    .login_main .note .noteContent {
+      max-width: 400px;
+      display: none;
+      padding: 10px;
+      position: absolute;
+      top: 40px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.5); }
+      .login_main .note .noteContent p {
+        font-size: 0.9em; }
+      .login_main .note .noteContent:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 12px 12px 12px;
+        border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+        position: absolute;
+        top: -12px;
+        left: 20px; }
+    .login_main .note:hover .noteContent {
+      display: block; }
+
+@media (max-width: 768px) {
+  .tsContent {
+    width: 100%;
+    overflow-x: hidden; }
+
+  .login_main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    overflow: hidden; }
+    .login_main .sec_login {
+      width: 320px;
+      overflow: hidden; } }
+
+/*# sourceMappingURL=demo.css.map */
