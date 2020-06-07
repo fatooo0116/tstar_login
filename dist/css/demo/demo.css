@@ -18,7 +18,14 @@
   margin: auto; }
 .modal .icon h3 {
   color: #E3007C;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 15px; }
+.modal .icon a {
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #E3007C;
+  display: block; }
 
 .sec_login {
   transition: all 0.3s;
@@ -29,18 +36,51 @@
   transform: translate(-100px, 0);
   position: absolute;
   width: 400px;
-  height: 250px; }
+  height: 380px; }
+  .sec_login.right {
+    -ms-transform: translate(100px, 0);
+    -webkit-transform: translate(100px, 0);
+    transform: translate(100px, 0); }
+  .sec_login.left {
+    -ms-transform: translate(-100px, 0);
+    -webkit-transform: translate(-100px, 0);
+    transform: translate(-100px, 0); }
+  .sec_login.left {
+    position: absolute; }
   .sec_login.active {
     position: relative;
     opacity: 1;
     visibility: visible;
-    -ms-transform: translate(0, 0) !important;
-    -webkit-transform: translate(0, 0) !important;
-    transform: translate(0, 0) !important; }
-  .sec_login.right {
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .sec_login.active.right {
+    position: relative;
+    opacity: 0;
+    visibility: visible;
     -ms-transform: translate(100px, 0);
-    -webkit-transform: translate(-100px, 0);
+    -webkit-transform: translate(100px, 0);
     transform: translate(100px, 0); }
+  .sec_login .back {
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url(../../images/demo/go.svg);
+    position: absolute;
+    display: block;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .sec_login .back:active {
+      transform: scale(0.9); }
+    .sec_login .back:hover {
+      background-color: rgba(255, 255, 255, 0.7); }
+  .sec_login.active .back {
+    opacity: 1; }
 
 .login_main .sec_login.sh_err ul li input {
   border: 1px solid #b00023; }
@@ -58,15 +98,43 @@
   .login_main h3 {
     font-size: 1.9em;
     margin: 0px 0px 10px 0px;
-    letter-spacing: 0.2em; }
+    letter-spacing: 0.2em;
+    text-align: center; }
   .login_main p {
     font-size: 1.1em;
     margin: 0 0 10.5px;
-    letter-spacing: 0.2em; }
+    letter-spacing: 0.2em;
+    text-align: center; }
   .login_main form.mll_form ul {
     list-style-type: none;
     margin: 0;
     padding: 0; }
+    .login_main form.mll_form ul > li.recaptcha {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: space-between; }
+      .login_main form.mll_form ul > li.recaptcha .re {
+        width: calc(100% - 100px);
+        position: relative;
+        overflow: hidden; }
+        .login_main form.mll_form ul > li.recaptcha .re .err {
+          top: 10px;
+          right: 40px; }
+        .login_main form.mll_form ul > li.recaptcha .re .refresh {
+          height: 40px;
+          width: 40px;
+          padding: 0;
+          position: absolute;
+          right: -10px;
+          top: 0; }
+          .login_main form.mll_form ul > li.recaptcha .re .refresh img {
+            width: 100%; }
+      .login_main form.mll_form ul > li.recaptcha .re2 {
+        height: 40px; }
+        .login_main form.mll_form ul > li.recaptcha .re2 img {
+          height: 100%;
+          width: auto; }
     .login_main form.mll_form ul > li {
       list-style-type: none;
       padding: 5px 0px;
@@ -172,16 +240,20 @@
       background: #fff;
       color: #E3007C; }
     .login_main form.mll_form ul li a {
+      color: #E3007C;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       height: 40px;
       width: 100%;
       padding: 0px 10px;
+      text-decoration: none;
       text-align: center; }
       .login_main form.mll_form ul li a:hover {
         text-decoration: none;
         color: #E3007C; }
+      .login_main form.mll_form ul li a.sendCode .timer {
+        padding-left: 5px; }
   .login_main .lost_pass {
     text-align: center; }
     .login_main .lost_pass a {

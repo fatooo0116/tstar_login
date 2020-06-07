@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>台灣之星TSTAR - 挑戰最高CP值，提供3G 、4G行動上網</title>
+		<title>非TS用戶註冊 | 台灣之星TSTAR - 挑戰最高CP值，提供3G 、4G行動上網</title>
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
@@ -582,73 +582,165 @@
 				<script src="js/demo/demo.js"></script> 
 
 
-				<!-- demo元件開始-->
-				<article class="login_main">
-					<h3>即時快速‧無需等待</h3>
-					<p>我們提供的不只是服務 而是完美體驗</p>
-
-					<form class="mll_form" method="post" id="form1" action="/mc-ws/MC/login.action">
-
-						<div class="sec_login active">
-							<ul class="list fromUl">
-							<li>
-								<input id="ml_mbrid" type="text" name="msisdn" value="" placeholder="請輸入門號">
-								<input id="ph" name="ph" value="" type="hidden">
-								<span id="idLable" class="err" style="">請輸入門號，謝謝</span>
-							</li>
 		
-							<li>
-								<ol class="terms">
-									<li>台灣之星用戶(預付型用戶不適用)請使用手機號碼登入；非台灣之星用戶(含預付型)請使用Email註冊/登入</li>
-									<li>Email申請後，恕無法手動修改，請確保註冊資料的正確性！</li>
-								</ol>
-							</li>
-							<li>						  						  
-									<button type="button" class="next"  >下一步</button>						  
-							</li>
-							</ul>
-						</div>
 
-						<div class="sec_login right">
-							<ul class="list fromUl">
-								<a href="#" class="back"></a>
-								<li class="passwdbox">
-									<input id="ml_mbrpw" type="password" value="" placeholder="請輸入密碼">
-									<div class="preview"><div class="text"></div><div class="exit"></div></div>
-									<input id="password" name="password" type="hidden">
-									<span id="pwdLable" class="err" >請輸入密碼，謝謝</span>
+
+				<article class="tsContent staggered odd fullscreen loginPage1 margin" style="background-image:url('https://sso.tstartel.com/mc-ws/images/login/page1_bg.jpg')">
+
+					<link rel="stylesheet" href="css/demo/jquery_modal.css">
+					<link rel="stylesheet" href="css/demo/demo.css">
+					<script src="js/demo/jquery_modal.js"></script> 
+					<script src="js/demo/demo.js"></script> 
+	
+					
+	
+					<!-- demo元件開始-->
+					<article class="login_main">
+	
+						<form class="mll_form" method="post" id="form1" action="/mc-ws/MC/login.action">
+	
+							<div class="sec_login active">
+								<h3>會員註冊 / 登入</h3>
+	
+								<ul class="list fromUl">
+								<li>
+									<input id="ml_mbrid" type="text" name="msisdn" value="" placeholder="請輸入台灣之星門號/Email">
+									<input id="ph" name="ph" value="" type="hidden">
+									<span id="idLable" class="err" style="">門號/Email錯誤，請重新輸入</span>
+								</li>
+			
+								<li>
+									<ol class="terms">
+										<li>台灣之星用戶(預付型用戶不適用)請使用手機號碼登入；非台灣之星用戶(含預付型)請使用Email註冊/登入</li>
+										<li>Email申請後，恕無法手動修改，請確保註冊資料的正確性！</li>
+									</ol>
 								</li>
 								<li>						  						  
-										<button type="button"  id="btn_send" class=" next"    >登入</button>						  
+										<button type="button" class="next" target="1"  cur="0"  >下一步</button>						  
 								</li>
-								<li>
-									<section class="lost_pass">
-										<a  href="#" >忘記/申請密碼</a>
-									</section>
-								</li>
-							</ul>
-						</div>
-
-
-						<!--			
-							<section class="note">
-								首次登入
-								<article class="noteContent">							  
-									<p>若為首次登入，預設密碼為門號申辦人10碼身份證字號(第1碼英文需大寫)、統編戶請輸入8碼統一編號</p>
-								</article>
-							</section>
-						-->
-						</ul>
-					</form>
+								</ul>
+							</div>
+	
+	
+							<div class="sec_login right">
+								<a href="#" class="back" target="0"  cur="1" ></a>
+								<h3>註冊</h3>
+								<p>
+									請輸入驗證碼來綁定您的門號已發送<br/>
+									已發送至<span>0987***321</span>
+								</p>
+	
+								<ul class="list fromUl">
+									<li>
+										<input id="ml_mbrid" type="text" name="msisdn" value="" placeholder="請輸入驗證碼">
+										<input id="ph" name="ph" value="" type="hidden">
+										<span id="idLable" class="err" style="">驗證失敗，請重新輸入</span>
+									</li>	
+									<li><a href="#"  class="sendCode">重寄驗證碼 <span class="timer"></span></a></li>	
+									<li>						  						  
+											<button type="button" class="next" target="2" cur="1" >下一步</button>						  
+									</li>
+								</ul>
+							</div>	
+	
+		
 							
-					
-					<div id="ex1" class="modal">
-						<div class="icon">
-							<?xml version="1.0" ?><svg fill="none" height="24" stroke="#E3007C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.07V12a10 10 0 1 1-5.93-9.14"/><polyline points="23 3 12 14 9 11"/></svg>
-							<h3>登入成功</h3>
+							
+							<div class="sec_login right">
+								<a href="#" class="back" target="1" cur="2" ></a>
+								<h3>歸戶</h3>
+								<p>
+									你有商城會員帳戶嗎?是否要將該帳戶資料<br/>
+									合併至門號<span>0987***321</span>?
+								</p>
+	
+								<ul class="list fromUl">
+									<li>
+										<input id="ml_mbrid" type="text" name="msisdn" value="" placeholder="請輸入台灣之星門號">
+										<input id="ph" name="ph" value="" type="hidden">
+										<span id="idLable" class="err" style="">門號不存在，請重新輸入</span>
+									</li>	
+									<li>
+										<ol class="terms">
+											<li>台灣之星用戶(預付型用戶不適用)請使用手機號碼登入；非台灣之星用戶(含預付型)請使用Email註冊/登入</li>
+											<li>Email申請後，恕無法手動修改，請確保註冊資料的正確性！</li>
+										</ol>
+									</li>
+									<li>						  						  
+											<button type="button" class="next" target="3"  cur="2"  >下一步</button>						  
+									</li>
+									<li>						  						  
+										<a href="#" class="next skip" target="4" cur="2"  >跳過</a>						  
+									</li>
+								</ul>
+							</div>	
+							
+							
+	
+							<div class="sec_login right">
+								<a href="#" class="back" target="2" cur="3"></a>
+								<h3>歸戶</h3>
+								<p>
+									請輸入驗證碼來綁定您的門號已發送<br/>
+									已發送至<span>xxx@gmail.com</span>
+								</p>
+	
+								<ul class="list fromUl">
+									<li>
+										<input id="ml_mbrid" type="text" name="msisdn" value="" placeholder="請輸入驗證碼">
+										<input id="ph" name="ph" value="" type="hidden">
+										<span id="idLable" class="err" style="">驗證失敗，請重新輸入</span>
+									</li>	
+									<li><a href="#"  class="sendCode">重寄驗證碼 <span class="timer"></span></a></li>	
+									<li>						  						  
+											<button type="button" class="next " target="4" cur="3"  >送出</button>						  
+									</li>
+								</ul>
+							</div>							
+	
+	
+							<div class="sec_login right">
+								<a href="#" class="back" target="2" cur="4"></a>
+								<h3>設定密碼</h3>
+								<ul class="list fromUl">								
+									<li class="passwdbox">
+										<input id="ml_mbrpw" type="password" value="" placeholder="請輸入密碼">
+										<div class="preview"><div class="text"></div><div class="exit"></div></div>
+										<input id="password" name="password" type="hidden">
+										<span id="pwdLable" class="err" >請輸入密碼，謝謝</span>
+									</li>
+										
+	
+									<li>						  						  
+										<button type="button"  id="btn_send" class=" next end"   cur="4"   >送出</button>						  
+									</li>							
+									
+								</ul>
+							</div>
+	
+	
+							<!--			
+								<section class="note">
+									首次登入
+									<article class="noteContent">							  
+										<p>若為首次登入，預設密碼為門號申辦人10碼身份證字號(第1碼英文需大寫)、統編戶請輸入8碼統一編號</p>
+									</article>
+								</section>
+							-->
+							</ul>
+						</form>
+								
+						
+						<div id="ex1" class="modal">
+							<div class="icon">
+								<?xml version="1.0" ?><svg fill="none" height="24" stroke="#E3007C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 11.07V12a10 10 0 1 1-5.93-9.14"/><polyline points="23 3 12 14 9 11"/></svg>
+								<h3>註冊成功</h3>
+								<a href="#">將自動跳轉到指定頁面 > </a>
+							</div>
 						</div>
-					</div>
-				</article>
+					</article>
+	
+	
 
 
 

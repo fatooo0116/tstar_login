@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>非TS用戶登入 | 台灣之星TSTAR - 挑戰最高CP值，提供3G 、4G行動上網</title>
+		<title>既有用戶登入 | 台灣之星TSTAR - 挑戰最高CP值，提供3G 、4G行動上網</title>
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favico/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favico/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
@@ -582,6 +582,7 @@
 				<script src="js/demo/demo.js"></script> 
 
 
+				
 
 				<!-- demo元件開始-->
 				<article class="login_main">
@@ -626,12 +627,13 @@
 									<input id="password" name="password" type="hidden">
 									<span id="pwdLable" class="err" >請輸入密碼，謝謝</span>
 								</li>
+								<li>※選擇跳過則下次登入預設密碼為OTP驗證六位數認證碼</li>
 								<li>						  						  
 									<button type="button"  id="btn_send" class="next end"   cur="1"   >登入</button>						  
 								</li>
 								<li>
 									<section class="lost_pass">
-										<a  href="#" class="next skip" target="2" cur="1" >忘記/申請密碼</a>
+										<a  href="#" class="next skip" target="2" cur="1" >忘記密碼</a>
 									</section>
 								</li>
 							</ul>
@@ -646,8 +648,8 @@
 							</p>
 							<ul class="list fromUl">								
 								<li class="passwdbox">
-									<input id="ml_mbrpw" type="text" value="" placeholder="請輸入 Email">									
-									<span id="pwdLable" class="err" >請輸入正確Email，謝謝</span>
+									<input id="ml_mbrpw" type="text" value="" placeholder="請輸入 門號">									
+									<span id="pwdLable" class="err" >請輸入正確門號，謝謝</span>
 								</li>
 								<li class="recaptcha">
 									<span class="re">
@@ -670,7 +672,7 @@
 							<a href="#" class="back" target="2" cur="3"></a>
 							<h3>忘記密碼</h3>
 							<p>
-								驗證碼已寄到lydiaw***@tstartel.com
+								已發送至0987***321
 							</p>
 
 							<ul class="list fromUl">
@@ -710,7 +712,10 @@
 				</article>
 
 
-				<!-- 元件結束-->
+				<!-- 元件結束-->				
+
+
+
 			  </article>
 
 		</main>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 19 18" style="enable-background:new 0 0 19 18;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#E3007C;fill-opacity:0.9;}
+	.st1{filter:url(#filter-2);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#E3007C;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="105.2%" id="filter-2" width="108.0%" x="-4.0%" y="-2.6%">
+	<feOffset  dx="0" dy="0.5" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+	<feComposite  in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1">
+		</feComposite>
+	<feColorMatrix  in="shadowInnerInner1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0"></feColorMatrix>
+</filter>
+<desc>Created with sketchtool.</desc>
+<g id="mobile">
+	<g id="首頁_menu_我的" transform="translate(-342.000000, -252.000000)">
+		
+			<g id="icon_x2F_go" transform="translate(351.000000, 261.000000) rotate(-360.000000) translate(-351.000000, -261.000000) translate(342.000000, 252.000000)">
+			<g id="icon_x2F_link" transform="translate(6.000000, 4.000000)">
+				<g id="Path-2">
+					<g>
+						<path id="path-1" class="st0" d="M6.1,0.9c0.2-0.2,0.2-0.5,0.1-0.7C6,0,5.6-0.1,5.4,0.1L0,4.8l5.4,4.6C5.7,9.7,6,9.6,6.1,9.4
+							c0.2-0.2,0.2-0.5-0.1-0.7L1.5,4.8L6.1,0.9z"/>
+					</g>
+					<g class="st1">
+						<path id="path-1_2_" class="st2" d="M6.1,0.9c0.2-0.2,0.2-0.5,0.1-0.7C6,0,5.6-0.1,5.4,0.1L0,4.8l5.4,4.6
+							C5.7,9.7,6,9.6,6.1,9.4c0.2-0.2,0.2-0.5-0.1-0.7L1.5,4.8L6.1,0.9z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

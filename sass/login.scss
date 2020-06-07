@@ -7,24 +7,79 @@
     transform: translate(-100px, 0);
     position: absolute;
     width: 400px;
-     height: 250px;
-    
+     height: 380px;
+
+     &.right{
+        -ms-transform: translate(100px, 0);
+        -webkit-transform: translate(100px, 0);
+        transform: translate(100px, 0);
+    }
+
+
+    &.left{
+        -ms-transform: translate(-100px, 0);
+        -webkit-transform: translate(-100px, 0);
+        transform: translate(-100px, 0);
+    }    
+
+    &.left{
+        position: absolute;
+    }
 
     &.active{
         position: relative;
         opacity: 1;
         visibility: visible;
-        -ms-transform: translate(0, 0) ! important;
-        -webkit-transform: translate(0, 0)  ! important;
-        transform: translate(0, 0)  ! important;
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);  
     }
 
-    &.right{
+
+    &.active.right{
+        position: relative;
+        opacity: 0;
+        visibility: visible;
         -ms-transform: translate(100px, 0);
-        -webkit-transform: translate(-100px, 0);
+        -webkit-transform: translate(100px, 0);
         transform: translate(100px, 0);
     }
+
+
+
+
+    .back{
+        
+        transition: 0.3s;;
+        transform: scale(1);
+        opacity: 0;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.5);
+        background-image: url(../../images/demo/go.svg);
+        position: absolute;
+        display: block;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:active{
+            transform: scale(0.9);
+        }
+        &:hover{
+            background-color: rgba(255,255,255,0.7);
+        }
+    }
+    &.active{
+        .back{
+            opacity: 1;
+        }
+    }
 }
+
+
+
+
 
 .login_main .sec_login.sh_err{
     ul  li input{
@@ -45,18 +100,55 @@
 	h3{
 		font-size: 1.9em;
 		margin: 0px 0px 10px 0px;	
-		letter-spacing: 0.2em;	
+        letter-spacing: 0.2em;	
+        text-align: center;
 	}
 	p{
 		font-size: 1.1em;
 		margin: 0 0 10.5px;
-		letter-spacing: 0.2em;
+        letter-spacing: 0.2em;
+        text-align: center;
 	}
 	form.mll_form{
 		ul{
 			list-style-type: none;
 			margin:0;
-			padding:0;
+            padding:0;
+            
+            > li.recaptcha{
+                display: flex;
+                margin-bottom: 10px;
+                align-items: center;
+                justify-content: space-between;
+                .re{
+                    width: calc(100% - 100px);
+                    position: relative;
+                    overflow: hidden;
+                    .err{
+                        top: 10px;
+                        right: 40px;
+                    }
+                    .refresh{
+                        height: 40px;
+                        width: 40px;
+                        padding: 0;
+                        position: absolute;
+                        right: -10px;
+                        top: 0;
+                        img{
+                            width:100%
+                        }
+                    }
+                }
+                .re2{
+                    height:40px;
+                    img{
+                        height:100%;
+                        width:auto;
+                    }
+                }
+            }
+
 			> li{
                 list-style-type: none;
                 padding: 5px 0px;
@@ -196,17 +288,25 @@
 
             li{
                 a{
+                    color:#E3007C;
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
                     height: 40px;
                     width: 100%;;
                     padding: 0px 10px;
+                    text-decoration: none;
                     text-align: center;
                     &:hover{
                         text-decoration: none;
                         color:#E3007C;
-                    }   
+                    } 
+                    
+                    &.sendCode{
+                        .timer{
+                            padding-left:5px;
+                        }
+                    }
                 }
             }
             
